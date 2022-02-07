@@ -63,6 +63,7 @@ body{
     transition: 300ms transform;
     transform: translateX(100%);
     border-top-left-radius: 40px;
+    opacity: 0.9;
 }
 #checkbox:checked + .menu{
     transform: translateX(0);
@@ -83,6 +84,10 @@ body{
     padding-left: 15px;
     transition: 0.3s;
     font-weight: bold;
+}
+.menu ul li i{
+    position: absolute;
+    right: 20px;
 }
 
 .menu ul li a:hover{
