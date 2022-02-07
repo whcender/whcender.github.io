@@ -1,3 +1,115 @@
-h1{
-  margin-left: 50px;
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rowdies', cursive;    
+}
+body{
+    background-color: #161616;
+    overflow: hidden;
+}
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+.header::before{
+    content: "LEUCH STORE";
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    color: rgba(180, 164, 164, 0.603);
+    font-size: 100px;
+    opacity: 0.1;
+    font-weight: bold;
+    letter-spacing: 2px;
+    z-index: -1;
+}
+.logo i{
+    display: block;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 25px;
+    height: 13px;
+}
+.logo h2{
+    margin-left: 50px;
+    margin-top: -20px;
+}
+/* ROW SECTİON */
+
+.container .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col2{
+    flex-basis: 50%;
+    min-width: 300px;
+    margin-top: 70px;
+}
+.col2 h2{
+    color: #fff;
+    font-size: 60px;
+    line-height: 60px;
+    margin: 25px 0;
+    letter-spacing: 2px;
+}
+.col2 p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 30px;
+}
+.col2 a{
+    margin-top: 200px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 8px 20px;
+    display: inline-block;
+    margin-top: 40px;
+    border: 2px solid #E04848;
+    background-color: #E04848;
+    border-radius: 35px;
+    font-weight: bold;
+    transition: 0.5s;
+    letter-spacing: 2px;
+}
+.col2 a:hover{
+    background-color: #d82727;
+}
+.ring img{
+    width: 400px;
+}
+/* RİNG SECTİON */
+
+.col2 .ring img{
+    width: 100%;
+    max-width: 450px;
+    margin-top: -100px;
+}
+#circle-ring{
+    padding-left: 160px;
+    padding-top: 120px;
+}
+.col2 .ring{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
 }
