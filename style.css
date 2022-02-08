@@ -229,23 +229,31 @@ body{
 }
 
 @media only screen and (max-width: 768px){
-    .body{
-    overflow: auto;
-    }
     .container .row{
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: space-around;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
+
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        align-content: space-around;
+        align-items: stretch;
     }
+    
     .header::before{
         top: 78%;
         left: 25%;
     }
+    #checkbox:checked + .menu{
+        transform: translateX(calc(-20% ));
+    }
+    #circle-ring{
+        position: absolute;
+        top: 500px;
+        right: -5px;
+        font-size: 40px;
+    }
 }
 
-/*PRODUCsTS*/
+/*PRODUCTS*/
 
 
