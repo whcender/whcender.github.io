@@ -7,7 +7,7 @@
 }
 body{
     background-color: #161616;
-    overflow: hidden;
+    overflow: auto;
 }
 .container{
     max-width: 1400px;
@@ -227,4 +227,22 @@ body{
     }
     
 }
+
+@media only screen and (max-width: 768px){
+    .container .row{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: space-around;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    }
+    .header::before{
+        top: 78%;
+        left: 25%;
+    }
+}
+
+/*PRODUCTS*/
+
 
