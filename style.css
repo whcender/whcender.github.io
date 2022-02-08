@@ -1,285 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Rowdies', cursive;    
-}
-body{
-    background-color: #161616;
-    overflow: auto;
-}
-.container{
-    max-width: 1400px;
-    margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
-}
-.menu-icon input{
-    display: none;
-}
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    color: #fff;
-    cursor: pointer;
-    margin-top: 10px;
-    font-size: 20px;
+<!DOCTYPE html>
+<html lang="en">
 
-}
-.header::before{
-    content: "LEUCH STORE";
-    position: absolute;
-    top: 61%;
-    left: 50%;
-    color: rgba(180, 164, 164, 0.603);
-    font-size: 100px;
-    opacity: 0.1;
-    font-weight: bold;
-    letter-spacing: 2px;
-    z-index: -1;
-}
-.logo i{
-    display: block;
-    align-items: center;
-    margin-top: 10px;
-    font-size: 25px;
-    height: 13px;
-}
-.logo h2{
-    margin-left: 50px;
-    margin-top: -20px;
-    border-bottom: 2px solid white;
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leuch Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
 
-}
-.menu{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 300px;
-    background: #111111;
-    height: 100%;
-    transition: 300ms transform;
-    transform: translateX(100%);
-    border-top-left-radius: 40px;
-    opacity: 0.9;
-}
-#checkbox:checked + .menu{
-    transform: translateX(0);
-}
-.menu ul{
-    list-style: none;
-    margin-top: 90px;
-}
-.menu ul li a{
-    display: block;
-    text-decoration: none;
-    color: #fff;
-    padding: 7px 0;
-    margin-left: 50px;
-    margin-top: 60px;
-    border-bottom: 2px solid #fff;
-    border-radius: 10px;
-    padding-left: 15px;
-    transition: 0.3s;
-    font-weight: bold;
-}
-.menu ul li i{
-    position: absolute;
-    right: 20px;
-}
+<body>
 
-.menu ul li a:hover{
-    background-color: white;
-    color: black;
-}
-.menu p{
-    position: absolute;
-    bottom: 10px;
-    padding-left: 75px;
-}
-/* ROW SECTİON */
+    <div class="container">
+        <header class="header">
+            <div class="menu-icon">
+                <label for="checkbox"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="checkbox">
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fas fa-info-circle"></i>HAKKIMIZDA</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-shopping-basket"></i>ÜRÜNLERİMİZ</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-phone"></i>İLETİŞİM</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-hashtag"></i>SOSYAL MEDYA</a>
+                        </li>
+                    </ul>
+                    <p>(tüm haklar saklıdır.)</p>
+                </div>
+            </div>
+            <div class="logo">
+                <div class="logo2">
+                    <i class="fas fa-hat-cowboy"></i>
+                </div>
+                <h2>LEUCH STORE</h2>
+            </div>
+            <div class="shop-icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col2">
+                <h2>E-Satış & Hakkımızda</h2>
+                <p>2022 kuruluş Tarihli şirketimiz LEUCH STORE yerli üretimi destekleyerek ürünlerimizi
+                    100%
+                    yerli olucak şekilde üreterek hem satışını hemde toptan satışını sağlamaktayız.</p>
+                <a href="#" class="btn">DAHA FAZLA</a>
+            </div>
+            <div class="col2" id="circle-ring">
+                <div class="ring" id="ring1">
+                    <img src="1.png" alt="">
+                    <span class="circle"></span>
+                </div>
+                <div class="ring-two">
+                    <spanc class="circle-two"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
 
-.container .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-.col2{
-    flex-basis: 50%;
-    min-width: 300px;
-    margin-top: 70px;
-}
-.col2 h2{
-    color: #fff;
-    font-size: 60px;
-    line-height: 60px;
-    margin: 25px 0;
-    letter-spacing: 2px;
-}
-.col2 p{
-    color: #fff;
-    font-size: 20px;
-    line-height: 30px;
-}
-.col2 a{
-    margin-top: 200px;
-    color: #fff;
-    text-decoration: none;
-    font-size: 22px;
-    padding: 8px 20px;
-    display: inline-block;
-    margin-top: 40px;
-    border: 2px solid #E04848;
-    background-color: #E04848;
-    border-radius: 35px;
-    font-weight: bold;
-    transition: 0.5s;
-    letter-spacing: 2px;
-}
-.col2 a:hover{
-    background-color: #d82727;
-}
-.ring img{
-    height: 605px;
-    width: 600px;
-}
-/* RİNG SECTİON */
-
-.col2 .ring img{
-    width: 100%;
-    max-width: 650px;
-    margin-top: -100px;
-}
-#circle-ring{
-    padding-left: 160px;
-    padding-top: 120px;
-}
-.col2 .ring{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    background-color: transparent;
-    border: 3px solid #3c3c3c;
-    border-radius: 50%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
-.col2 .ring:before{
-    content: "";
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 100%;
-    height: 100%;
-    border: 3px solid transparent;
-    border-top: 3px solid #D82727;
-    border-right: 3px solid #D82727;
-    border-radius: 50%;
-    z-index: -1;
-    animation: returnCircle 10s linear infinite;
-}
-
-.col2 .ring .circle{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50%;
-    height: 4px;
-    background: transparent;
-    transform-origin: left;
-    z-index: -1;
-    animation: return 10s linear infinite;
-}
-
-.col2 .ring .circle:before{
-    content: "";
-    position: absolute;
-    top: -6px;
-    right: -9px;
-    width: 16px;
-    height: 16px;
-    background: #D82727;
-    border-radius: 50%;
-    box-shadow: 0 0 20px #D82727;
-    z-index: -1;
-}
-@keyframes returnCircle {
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-    
-}
-
-
-@keyframes return {
-    0%{
-        transform: rotate(45deg);
-    }
-    100%{
-        transform: rotate(405deg);
-    }
-    
-}
-
-@media only screen and (max-width: 768px){
-    .container .row{
-
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: space-around;
-        align-content: space-around;
-        align-items: stretch;
-    }
-    
-    .header::before{
-        top: 78%;
-        left: 25%;
-    }
-    #checkbox:checked + .menu{
-        transform: translateX(calc(-20% ));
-    }
-    #circle-ring{
-        position: absolute;
-        top: 500px;
-        right: -5px;
-        font-size: 40px;
-    }
-    .header::before{
-        content: "LEUCH STORE";
-        position: absolute;
-        top: 91%;
-        left: -5;
-        font-size: 60px;
-    }
-    #circle-ring{
-        position: absolute;
-        /* width: 200px; */
-    }
-    .ring img{
-        position: absolute;
-        height: 450px;
-        width: 200px;
-        /* padding-left: 400px; */
-        /* right: 0px; */
-
-    }
-    .col2 .ring{
-        position: absolute;
-        width: 300px;
-        height: 300px;
-        right: 60px;
-
-    }
-}
-
-/*PRODUCTS*/
-
-
+</html>
