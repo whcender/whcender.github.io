@@ -238,7 +238,12 @@ body{
         align-content: space-around;
         align-items: stretch;
     }
-    
+    .container .row h2{
+        font-size: 50px;
+    }
+    #circle-ring.col2{
+        right: 0.5px;
+    }
     .header::before{
         top: 78%;
         left: 25%;
