@@ -229,6 +229,12 @@ body{
 }
 
 @media only screen and (max-width: 768px){
+    .header{
+        font-size: 17px;
+    }
+    .menu{
+        font-size: 20px;
+    }
     .container .row{
 
         display: flex;
@@ -249,7 +255,7 @@ body{
         left: 25%;
     }
     #checkbox:checked + .menu{
-        transform: translateX(calc(-5% ));
+        transform: translateX(calc(-1% ));
     }
     #circle-ring{
         position: absolute;
