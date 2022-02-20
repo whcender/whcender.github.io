@@ -53,7 +53,7 @@ body{
     border-bottom: 2px solid white;
 
 }
-.menu{
+#menu{
     position: fixed;
     top: 0;
     right: 0;
@@ -65,14 +65,14 @@ body{
     border-top-left-radius: 40px;
     opacity: 0.9;
 }
-#checkbox:checked + .menu{
-    transform: translateX(0);
-}
-.menu ul{
+/* #checkbox:checked + #menu{
+    transform: translateX(100%);
+} */
+#menu ul{
     list-style: none;
-    margin-top: 90px;
+    margin-top: 110px;
 }
-.menu ul li a{
+#menu ul li a{
     display: block;
     text-decoration: none;
     color: #fff;
@@ -85,19 +85,31 @@ body{
     transition: 0.3s;
     font-weight: bold;
 }
-.menu ul li i{
+#menu ul li i{
     position: absolute;
     right: 20px;
 }
 
-.menu ul li a:hover{
+#menu ul li a:hover{
     background-color: white;
     color: black;
 }
-.menu p{
+#menu p{
     position: absolute;
     bottom: 10px;
     padding-left: 75px;
+}
+#menu #close{
+    position: absolute;
+    font-size: 40px;
+    margin-right: 25px;
+    margin-top: 25px;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+.open-menu +#menu{
+    transform: translateX(0%);
 }
 /* ROW SECTİON */
 
