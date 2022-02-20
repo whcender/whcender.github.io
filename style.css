@@ -107,6 +107,10 @@ body{
     right: 0;
     top: 0;
     cursor: pointer;
+    transition: 0.5s;
+}
+#menu #close:hover{
+    font-size: 50px;
 }
 .open-menu +#menu{
     transform: translateX(0%);
