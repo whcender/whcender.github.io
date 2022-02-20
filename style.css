@@ -111,6 +111,7 @@ body{
 }
 #menu #close:hover{
     font-size: 50px;
+    color: rgb(216, 215, 215);
 }
 .open-menu +#menu{
     transform: translateX(0%);
