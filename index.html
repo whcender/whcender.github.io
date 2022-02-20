@@ -8,6 +8,7 @@
     <title>Leuch Store</title>
     <link rel="shortcut icon" type="image/png" href="https://i.hizliresim.com/mxy4nto.png" />
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="function.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -18,21 +19,23 @@
     <div class="container">
         <header class="header">
             <div class="menu-icon">
-                <label for="checkbox"><i class="fas fa-bars"></i></label>
-                <input type="checkbox" id="checkbox">
-                <div class="menu">
+                <div id="toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+                <div id="menu">
+                    <div id="close"><i class="fa-solid fa-circle-xmark"></i></div>
                     <ul>
-                        <li>
-                            <a href="#"><i class="fas fa-info-circle"></i>HAKKIMIZDA</a>
+                        <li class="link">
+                            <a  href="#"><i class="fas fa-info-circle"></i>HAKKIMIZDA</a>
                         </li>
-                        <li>
+                        <li class="link1">
                             <a href="#"><i class="fas fa-shopping-basket"></i>ÜRÜNLERİMİZ</a>
                         </li>
-                        <li>
+                        <li class="link2">
                             <a href="#"><i class="fas fa-phone"></i>İLETİŞİM</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fas fa-hashtag"></i>SOSYAL MEDYA</a>
+                        <li class="link3">
+                            <a  href="#"><i class="fas fa-hashtag"></i>SOSYAL MEDYA</a>
                         </li>
                     </ul>
                     <p>(tüm haklar saklıdır.)</p>
@@ -67,6 +70,38 @@
             </div>
         </div>
     </div>
+    <script>
+        const toggle = document.getElementById('toggle');
+        const close = document.getElementById('close');
+        const row = document.querySelector('.row');
+        const atext = document.querySelector('.link');
+        const atext1 = document.querySelector('.link1');
+        const atext2 = document.querySelector('.link2');
+        const atext3 = document.querySelector('.link3');
+        
+        toggle.addEventListener('click', () => {
+            toggle.classList.add('open-menu')
+        })
+
+        close.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+        row.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+        atext.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+        atext1.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+        atext2.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+        atext3.addEventListener('click', () => {
+            toggle.classList.remove('open-menu')
+        })
+    </script>
 </body>
 
 </html>
